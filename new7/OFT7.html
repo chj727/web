@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리의 발자취</title>
+
+    <script type="text/javascript" src="http://bpmaker.giffy.me/userdata/user/54/54797/2/parts.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+
+    <style>
+   
+        * {
+            font-family: 'Nanum Pen Script', cursive;
+        }
+
+        body {
+           
+            background-color: #f5eed0;
+            
+          
+            
+        }
+
+        
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+        }
+
+
+        
+    
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open{
+            display: none;
+        }
+
+        .rtan {
+            background-color: wheat;
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160325_3%2Fljhee1008_1458887762403lUsc8_JPEG%2FattachImage_599937330.jpeg&type=ofullfill340_600');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+
+            border-radius: 100px;
+
+            border: 5px solid whitesmoke;
+            box-shadow: 0px 0px 10px 5px wheat;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox1 {
+            background-color: ivory;
+
+            width: 400px;
+            margin: auto;
+
+            color: rgb(2, 14, 9);
+
+            padding: 30px;
+
+            font-size: 20px;
+            line-height: 30px;
+
+            box-shadow: 0px 0px 10px 2px white;
+        }
+
+    
+
+        .from {
+            text-align: right;
+            margin: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .rtan {
+                width: 150px;
+                height: 150px;
+                margin: 65px auto 0px auto;
+            }
+        }
+    </style>
+
+    <script>
+
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+
+        }
+
+        function close_letter() {
+            document.getElementsByClassName("letter-open")[0].style.display = 'none'
+            document.getElementsByClassName("letter-close")[0].style.display = 'block'
+
+        }
+        function go_rtan() {
+            alert('읽느라 수고했오 안뇽~');
+            window.location.href='https://blog.naver.com/PostList.naver?blogId=chaeheejoon&skinType=&skinId=&from=menu&userSelectMenu=true'
+
+        }
+
+    
+    </script>
+</head>
+
+<body>
+   
+    <div class="letter-close">
+        <div class="envelope"onclick="open_letter()"></div>
+    
+    </div>
+
+
+    <envelope>
+        <div class="letter-open">
+            <div class="rtan" onclick="go_rtan()"></div>
+            <h1>생일 너무 축하해!</h1>
+            <div class="messagebox1" onclick="close_letter()">
+                현민아 오늘은 일년에 한번 뿐인 현민이의 생일이야. 어떻게 보면 나한테 정말 특별한 날이기도 한데 원래는 이날이 내가 현민이에게 고백하는 날이었거든. 현민이를 처음 본 순간부터 너무 마음에 들고 당장에라도 사귀고 싶었지만, 우리 둘다 시간이 좀 필요할 거라고 생각했어. 전 사람과의 관계정리나 서로를 알아가는 시간 같은거 말야. 그런데 전사람과의 관계는 우리 둘다 끝냈다고 하고 알아가는 시간은 사귀고 나서도 가지면 된다니 현민이의 그 말에 71일 전 나는 더욱 용기를 냈던 것 같아. 물론 뽀뽀도 한몫했지만.. 그래서 결국 연인이 되었고 연인인 상태에서 챙겨주는 첫 생일인데 내가 이런걸 해본적이 없다보니 정말 많이 떨린다..ㅎ 나름 오랫동안 정말 열심히 준비했고 그 시간들을 따로 내 인생에서 저장해두고 싶을 만큼 행복하고 값진 시간들이었어. 현민이 덕분에 이렇게 무언가에 몰두해보기도 하고 선물 고민도 해보고 가끔 즐거운 상상도 해봐. 현민아 나에게 와주어서 정말 고맙고 21년 전 오늘 태어나줘서 고마워. 이번 생일이 현민이 인생에서 잊지 못할 하루가 되길 기약하며 조금 이따 보자 생일 축하하고 사랑한다 이현민!
+                <p class="from">2021.7.14</p>
+            </div>
+        </div>
+    </envelope>
+
+
+
+  
+
+ 
+</body>
+
+</html>
